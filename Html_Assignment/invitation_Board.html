@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation card</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            margin-top: 100px;
+            justify-content: center;
+            align-items: center;
+            background-color:#f4f5f7;
+            font-family: 'Segoe UI';
+        }
+        .container{
+            max-width: 380px;
+            border: 1px solid black;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding:50px 30px 50px ;
+            border-radius: 8px;
+            box-shadow: 1px 1px 10px 1px gray;
+            border: none;
+        }
+        h1{
+            font-weight: 550;
+            letter-spacing: 1.5px;
+            line-height: 10px;
+            margin: 20px 0px;
+        }
+        label{
+            font-size: 18px;
+            color: black;
+            display: block;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            margin: 10px 0px;
+        }
+        input{
+            font-size: 16px;
+            padding: 5px 75px 6px 15px;
+            border: 1px solid gray;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        button{
+            font-size: 20px;
+            padding: 7px 78px;
+            margin: 40px 0px;
+            background-color:#0079bf;
+            color: #fff;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color:#1d85c2
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Invite To Board</h1>
+        <form action="">
+            <label for="Email">Email Address : </label>
+            <input type="email" placeholder="Enter Your Email Address" id="Email" required>
+            <label for="name">Full Name : </label>
+            <input type="text" placeholder="Enter Your Full Name" id="name" required>
+            <button class="btn">Send Invitation</button>
+        </form>
+    </div>
+</body>
+</html>
