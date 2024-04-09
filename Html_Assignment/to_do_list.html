@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items:start;
+    gap: 20px;
+    padding: 100px 100px;
+}
+.box{
+min-width: 300px;
+background-color: #F0F0F0;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+gap: 10px;
+padding:15px 10px;
+font-size: 18px;
+color: black;
+font-weight: 500;
+border-radius: 7px;
+
+
+}
+.top{
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+.top> a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+.add{
+    cursor: pointer;
+}
+.middle{
+    font-size: 16px;
+    padding: 8px;
+    background-color: white;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">
+        <div class="top">
+          <span class="spn">To Do</span><a href="#" class="dote">...</a>
+        </div>
+        <div class="middle">Learn HTML</div>
+        <div class="middle">Learn CSS</div>
+        <div class="top add">+ Add another card</div>
+      </div>
+      <div class="box box-2">
+        <div class="top">
+          <span class="spn">Doing</span><a href="#" class="dote">...</a>
+        </div>
+        <div class="middle">Prepare resume</div>
+        <div class="top add">+ Add another card</div>
+      </div>
+      <div class="box box-3">
+        <div class="top">
+            <span class="spn">Done</span><a href="#" class="dote">...</a>
+          </div>
+          <div class="top add">+ Add card</div>
+      </div>
+      <div class="box box-4"><div class="top add">+ Add another list</div></div>
+    </div>
+  </body>
+</html>
